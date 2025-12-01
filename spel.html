@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Game</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/script.js" defer></script>
+</head>
+<body>
+
+    <h1 id="playerName">Spelare:</h1>
+
+    <div>
+        <img id="diceImage" src="img/Dice-1.png" alt="Tärning" width="150">
+        
+    </div>
+
+    
+    <p>Total poäng: <span id="totalScore">0</span></p>
+    <p>Antal omgångar: <span id="rounds">0</span></p>
+    <p>Poäng denna runda: <span id="roundScore">0</span></p>
+    <p>Tärning: <span id="dice">-</span></p>
+
+    <button onclick="rollDice()">Kasta tärning</button>
+    <button onclick="hold()">Frys poäng</button>
+
+    <h2 id="message"></h2>
+
+</body>
+</html>
